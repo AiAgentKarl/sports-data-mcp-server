@@ -1,0 +1,27 @@
+name: sports-data-mcp-server
+displayName: Sports Data MCP
+description: Sports data for AI agents — football tables, scores, player profiles, NBA/NFL/NHL/MLB results. No API key required.
+iconUrl: https://cdn.jsdelivr.net/npm/twemoji@latest/assets/svg/26bd.svg
+license: MIT
+homepage: https://github.com/AiAgentKarl/sports-data-mcp-server
+repository: https://github.com/AiAgentKarl/sports-data-mcp-server
+tags:
+  - sports
+  - football
+  - soccer
+  - basketball
+  - nba
+  - nfl
+  - scores
+  - statistics
+  - ai-agent
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: "uvx",
+      args: ["sports-data-mcp-server"]
+    })
